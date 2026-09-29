@@ -4,7 +4,7 @@ A collection of HTML & CSS exercises from [Frontend Mentor](https://www.frontend
 
 ---
 
-## 📌 [Live Demo](https://mm-code-dev272.github.io/My-Frontend-Mentor-challenges/)
+## 📌 [Live Demo](https://mm-code-dev272.github.io/My-Frontend-Mentor-Challenges/)
 
 ---
 
