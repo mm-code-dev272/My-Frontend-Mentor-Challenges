@@ -48,6 +48,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 .welcome-h1::after {
