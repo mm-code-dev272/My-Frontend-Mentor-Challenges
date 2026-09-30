@@ -13,7 +13,6 @@
     --h1-gradient: linear-gradient(135deg, var(--emphasis) 0%,
             var(--energy) 50%,
             var(--brand-color) 100%);
-
 }
 
 * {
@@ -28,8 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center;
-      padding: 2rem; */
     justify-content: flex-start;
     padding: 4rem 2rem 2rem;
     background: var(--bg-light);
@@ -37,17 +34,21 @@ body {
 }
 
 .welcome-h1 {
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 6vw, 3rem);
     font-weight: 900;
     letter-spacing: -0.03125rem;
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
     padding-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;
     background: var(--h1-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .welcome-h1::after {
@@ -99,4 +100,19 @@ body {
 
 .workout-btn:active {
     transform: scale(1.02);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 2.5rem 1rem 2rem;
+    }
+
+    .welcome-h1 {
+        margin-bottom: 2rem;
+    }
+
+    .workout-btn {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+    }
 }
