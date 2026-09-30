@@ -1,4 +1,7 @@
-  * {
+:root{
+  --gradiant-color: linear-gradient(135deg, #fff5e6 0%, #ffe4c4 100%);
+}
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -14,8 +17,7 @@
       padding: 2rem;
       /* justify-content: flex-start;
       padding: 4rem 2rem 2rem; */
-      background: linear-gradient(135deg, #fff5e6 0%, #ffe4c4 100%);
-
+      background: var(--gradiant-color)
   }
 
   .welcome-h1 {
@@ -43,18 +45,6 @@
       height: 4px;
       background: linear-gradient(90deg, #ff7a00, #ff4d00);
       border-radius: 10px;
-  }
-
-  @keyframes fadeInUp {
-      from {
-          opacity: 0;
-          transform: translateY(30px);
-      }
-
-      to {
-          opacity: 1;
-          transform: translateY(0);
-      }
   }
 
   .workout-list {
