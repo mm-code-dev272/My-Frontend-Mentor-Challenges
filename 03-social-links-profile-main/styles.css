@@ -1,0 +1,127 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+    --specialty-color: rgb(193, 193, 193);
+
+    /* - Weights: 400, 600, 700 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--Grey900);
+    padding: clamp(0rem, calc(2.704rem - 1.878vw), 2rem);
+
+}
+
+.container {
+    background-color: var(--Grey800);
+    padding: clamp(2.5rem, calc(2.148rem + 0.939vw), 3.5rem) clamp(2rem, calc(1.648rem + 0.939vw), 3rem);
+    border-radius: 1.2rem;
+    width: 100%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.avatar-container {
+    margin-bottom: 1.6rem;
+}
+
+.avatar {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.country {
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.specialty {
+    color: var(--specialty-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    width: 95%;
+    background-color: var(--Grey700);
+    color: var(--White);
+    border: none;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+
+}
+
+.btn:hover {
+    color: var(--Grey900);
+    background-color: var(--green);
+}
+
+@media(max-width:767px) {
+    .btn {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .name {
+        font-size: 2.1rem;
+    }
+
+    .specialty {
+        font-size: 1.4rem;
+    }
+}
