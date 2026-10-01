@@ -42,10 +42,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-.avatar-container {
-    margin-bottom: 1.6rem;
+    gap: 2rem;
 }
 
 .avatar {
@@ -54,26 +51,31 @@ body {
     border-radius: 50%;
 }
 
+.name-and-country-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
 .name {
     color: var(--White);
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 
 .country {
     color: var(--green);
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 2rem;
 }
 
 .specialty {
     color: var(--specialty-color);
     font-size: 1.2rem;
     font-weight: 400;
-    margin-bottom: 2rem;
-
 }
 
 .btn-div {
