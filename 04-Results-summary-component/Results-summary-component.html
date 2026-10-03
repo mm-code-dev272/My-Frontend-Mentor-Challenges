@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results summary component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="result-container">
+
+            <h1 class="head">Your Result</h1>
+            <div class="circle-div">
+                <p class="result-number">76</p>
+                <p class="of-100-text">of 100</p>
+            </div>
+            <div class="result-description-div">
+                <p class="descriptive-result">Great</p>
+                <p class="comparison">
+                    You scored higher than 65% of the people who have taken these tests.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="summary-container">
+            <h2 class="summary-title">Summary</h2>
+
+            <div id="detailed-results"></div>
+
+            <button class="btn" type="button">Continue</button>
+        </div>
+
+    </main>
+
+    <script src="detailed-results-component.js"></script>
+</body>
+
+</html>

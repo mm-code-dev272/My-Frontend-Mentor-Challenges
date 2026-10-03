@@ -1,0 +1,205 @@
+:root {
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Weights: 500, 700, 800 */
+    /* Font size (paragraphs): 18px */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--White);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 45%;
+    gap: 2rem;
+    background-image: linear-gradient(to bottom,
+            var(--Light-slate-blue-background),
+            var(--Light-royal-blue-background));
+    border-radius: 0 0 2.2rem 2.2rem;
+    padding: 3.5rem 3rem;
+}
+
+.head {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--Light-lavender);
+}
+
+.circle-div {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom,
+            var(--Violet-blue-circle),
+            var(--Persian-blue-circle));
+}
+
+.result-number {
+    font-size: 6rem;
+    color: var(--White);
+    font-weight: 700;
+    text-align: center;
+}
+
+.of-100-text {
+    color: var(--Light-slate-blue-background);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.result-description-div {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.descriptive-result {
+    color: var(--White);
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.comparison {
+    font-size: 1.8rem;
+    color: var(--Light-lavender);
+    text-align: center;
+}
+
+.summary-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 0 0 55%;
+    padding: 3rem;
+}
+
+.summary-title {
+    font-size: 1.8rem;
+}
+
+
+#detailed-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.btn {
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    width: 100%;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom,
+            var(--Light-slate-blue-background),
+            var(--Light-royal-blue-background));
+}
+
+@media(min-width : 767px) {
+    body {
+        background-color: var(--Pale-blue);
+    }
+
+    .container {
+        background-color: var(--White);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 60rem;
+        height: auto;
+        border-radius: 2.2rem;
+    }
+
+    .result-container {
+        border-radius: 2.2rem;
+        padding: 3.5rem 5rem;
+        justify-content: flex-start;
+        flex: 1;
+        gap: 3rem;
+    }
+
+    .comparison {
+        font-size: 1.6rem;
+    }
+
+    .summary-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.5rem;
+        padding: 3rem;
+        flex: 1;
+    }
+
+    .btn {
+        font-size: 1.6rem;
+        padding: 1.2rem;
+    }
+
+}
