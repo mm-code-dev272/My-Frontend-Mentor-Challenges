@@ -22,4 +22,8 @@ A collection of HTML & CSS exercises from [Frontend Mentor](https://www.frontend
 
    This is a solution to the [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) Frontend Mentor challenge.
 
+4. code : [Results summary component](./04-Results-summary-component/)
+
+   This is a solution to the [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) Frontend Mentor challenge.
+
 
